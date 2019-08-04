@@ -26,7 +26,7 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
 
 # Inherit some common Havoc stuff.
-$(call inherit-product, vendor/havoc/products/common.mk)
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/google/crosshatch/aosp_blueline.mk)
