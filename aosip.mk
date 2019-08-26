@@ -21,6 +21,10 @@
 # lines, aosp and flounder, hence its name.
 #
 
+# Boot animation
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1920
+
 # Include AOSiP common configuration
 include vendor/aosip/config/common_full_phone.mk
 
@@ -39,8 +43,8 @@ PRODUCT_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=blueline \
-    BUILD_FINGERPRINT=google/blueline/blueline:9/PQ3A.190705.003/5600800:user/release-keys \
-    PRIVATE_BUILD_DESC="blueline-user 9 PQ3A.190705.003 5600800 release-keys"
+    BUILD_FINGERPRINT=google/blueline/blueline:9/PQ3A.190801.002/5670241:user/release-keys \
+    PRIVATE_BUILD_DESC="blueline-user 9 PQ3A.190801.002 5670241 release-keys"
 
 $(call inherit-product-if-exists, vendor/google/blueline/blueline-vendor.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
