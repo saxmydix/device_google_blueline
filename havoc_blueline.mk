@@ -45,6 +45,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=blueline \
     BUILD_FINGERPRINT=google/blueline/blueline:9/PQ3A.190801.002/5670241:user/release-keys \
     PRIVATE_BUILD_DESC="blueline-user 9 PQ3A.190801.002 5670241 release-keys"
+    
+# Maintainer Prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.havoc.maintainer=saxmydix
 
 $(call inherit-product-if-exists, vendor/google/blueline/blueline-vendor.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
